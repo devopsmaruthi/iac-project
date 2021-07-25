@@ -18,10 +18,6 @@ resource "aws_vpc" "main" {
 
   tags = local.tags
 }
-# availability zones in current region
-data "aws_availability_zones" "azs" {
-  state = "available"
-}
 # create a subnet
 resource "aws_subnet" "main" {
   count      = local.az_count

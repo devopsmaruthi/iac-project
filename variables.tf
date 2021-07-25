@@ -6,9 +6,8 @@ variable "vpc_tags" {
   type = map(string)
   default = {
     Name       = "main"
-    Location   = "Bangalore"
-    Department = "HR"
-  }
+    environment   = "maruthi-3tier"
+      }
 }
 
 variable "tenancy" {
